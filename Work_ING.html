@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio</title>
+  <link rel="icon" href="imagens/Portfolio.png" >
+
+ 	<!-- Bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/Portfolio.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="js/Portfolio.js"></script>
+
+	</style>
+</head>
+	<body>
+
+		<nav class="navbar fixed-top navbar-expand-sm bg-dark navbar-dark">
+			<a class="navbar-brand" href="index_ING.html">Portfolio</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+					  <a class="nav-link" href="index_ING.html">Intro</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="Who_ING.html">Who</a>
+					</li>
+					 <li class="nav-item">
+					  <a class="nav-link" href="What_ING.html">What</a>
+					</li> 
+					<li class="nav-item active">
+						<a class="nav-link" href="Work_ING.html">Works</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="Contact_ING.html">Contact</a>
+					</li>   					
+				</ul>
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<audio id="audio">
+							<source src="Media/Not For NothingOtis McDonald (No Copyright Music).mp3" type="audio/mpeg">
+						</audio>
+						<a id="audioOff" class="nav-item" onclick="playAudio()"><i class="material-icons verticalCenter">volume_off</i></a> 
+						<a id="audioOn" class="nav-item" onclick="playAudio()"><i class="material-icons verticalCenter">volume_up</i></a> 
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="Work_PT.html">PT</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-item sair" onclick="exitModal()" ><i class="material-icons verticalCenter">logout</i></a> 						
+					</li>
+				</ul>
+			</div>  
+		  </nav>
+		<!--End Navigation-->
+
+		 
+		<button id="btnScrollToTop">
+			<i class="material-icons md-36">keyboard_arrow_up</i>
+		</button>
+		
+		<div class="container padded">	
+			<div class="row">
+				<div class="col-lg-12 ">
+						<h2>Some Works</h2>
+						<hr>
+				</div>
+			</div>
+			<div class="row image-grid">
+				<div class="col-sm-3 col-md-3">
+					<a href="#SiteDosSites" target="_self" >
+						<img id="VerticalCenter" alt="Site Dos Sites" class="img-responsive center-block img-fluid img-thumbnail SombraAzul grid" src="imagens/SiteDosSites_Logo.png"  height="300px" width="300px">
+					</a>
+				</div>
+				<div class="col-sm-3 col-md-3">
+					<a href="#AradoVirtual" target="_self" >
+						<img id="VerticalCenter" alt="Arado Virtual" class="img-responsive center-block img-fluid img-thumbnail SombraAzulgrid grid" src="imagens/AradoVirtualLogo.png"  height="300px" width="300px">
+					</a>
+				</div><div class="col-sm-3 col-md-3">
+					<a href="#CsGoScene" target="_self" >
+						<img id="VerticalCenter" alt="CsGo Scene" class="img-responsive center-block img-fluid img-thumbnail SombraAzul grid" src="imagens/CsgoScenelogo.jpg"  height="300px" width="300px">
+					</a>
+				</div><div class="col-sm-3 col-md-3">
+					<a href="#CentroSaudeEST" target="_self" >
+						<img id="VerticalCenter" alt="Centro de Saude EST" class="img-responsive center-block img-fluid img-thumbnail SombraAzul grid" src="imagens/CentroSaudeEst_Logo.png" height="300px" width="300px">
+					</a>
+				</div>
+				
+				<div class="col-sm-3 col-md-3 tpad">
+					<a href="#StandLA" target="_self" >
+						<img id="VerticalCenter" alt="Stand LA" class="img-responsive center-block img-fluid img-thumbnail SombraAzul grid" src="imagens/Logo_StandLA.png" height="300px" width="300px">
+					</a>
+				</div>
+				<div class="col-sm-3 col-md-3 tpad">
+					<a href="#AgendaEST" target="_self" >
+						<img id="VerticalCenter" alt="Agenda EST" class="img-responsive center-block img-fluid img-thumbnail SombraAzul grid" src="imagens/Android.jpg" height="300px" width="300px">
+					</a>
+				</div>
+				<div class="col-sm-3 col-md-3 tpad">
+					<a href="#AlienInvasion" target="_self" >
+						<img id="VerticalCenter" alt="AlienInvasion" class="img-responsive center-block img-fluid img-thumbnail SombraAzul grid" src="imagens/AlienInvasion.png" height="300px" width="300px">
+					</a>
+				</div>
+				<div class="col-sm-3 col-md-3 tpad">
+					<a href="#DesigualdadeGenero" target="_self" >
+						<img id="VerticalCenter" alt="Desigualdade de Género" class="img-responsive center-block img-fluid img-thumbnail SombraAzul grid" src="imagens/DesigualdadeGenero.png" height="300px" width="300px">
+					</a>
+				</div>
+				
+				
+				<div class="col-sm-3 col-md-3 tpad">
+					<a href="#RunAndEat" target="_self" >
+						<img id="VerticalCenter" alt="RunAndEat" class="img-responsive center-block img-fluid img-thumbnail SombraAzul grid" src="imagens/RunAndEat.jpg" height="300px" width="300px">
+					</a>
+				</div>
+				<div class="col-sm-3 col-md-3 tpad">
+					<a href="#ClientesEST" target="_self" >
+						<img id="VerticalCenter" alt="Clientes EST" class="img-responsive center-block img-fluid img-thumbnail SombraAzul grid" src="imagens/BarESTCB.png" height="300px" width="300px">
+					</a>
+				</div>
+				<div class="col-sm-3 col-md-3 tpad">
+					<a>
+						<img id="VerticalCenter" alt="Site Dos Sites" class="img-responsive center-block img-fluid img-thumbnail SombraAzul grid" src="imagens/ComingSoon.jpg" height="300px" width="300px">
+					</a>
+				</div>
+				<div class="col-sm-3 col-md-3 tpad">
+					<a>
+						<img id="VerticalCenter" alt="Site Dos Sites" class="img-responsive center-block img-fluid img-thumbnail SombraAzul grid" src="imagens/ComingSoon.jpg" height="300px" width="300px">
+					</a>
+				</div>
+			</div>
+			</div>
+
+			<div class="container ">	
+				<div class="row">
+					<div class="col-sm-12 blog">
+						<h2>Works Detailed</h2>
+						<hr>
+						<section id="SiteDosSites">
+							<h4 class="azul tpad" >O Site Dos Sites</h4>
+							<img src="imagens/SiteDosSites.png" class="img-responsive center-block img-fluid img-thumbnail thumbs2">
+							<div class="smalltapd">
+								<button type="button" class="accordion ">Show Description</button>
+								<div class="panel">
+									<p class="tpad"> 
+										Site designed with the idea of helping new developers get ideas for their own websites as well as the respective codes of each example,based on w3schools.
+									</p>
+								</div>
+								<!--
+								<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#work1">Show Description &raquo;</button>
+								<div id="work1" class="collapse">
+									Site designed with the idea of helping new developers get ideas for their own websites as well as the respective codes of each example,based on w3schools.
+								</div>
+								-->
+							</div>
+						</section>
+						<br>
+						<br>
+						<section id="AradoVirtual">
+							<h4 class="azul tpad" >Arado Virtual</h4>
+							<img src="imagens/AradoVirtual.png" class="img-responsive center-block img-fluid img-thumbnail thumbs2">
+							<div class="smalltapd">
+								<button type="button" class="accordion ">Show Description </button>
+								<div class="panel">
+									<p class="tpad"> 
+										Site designed to inform and help you in your interests on the world of agriculture.
+									</p>
+								</div>
+								<!--
+								<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#work2">Show Description &raquo;</button>
+								<div id="work2" class="collapse">
+									Site designed to inform and help you in your interests on the world of agriculture.
+								</div>
+								-->
+							</div>
+						</section>
+						<br>
+						<br>
+						<section id="CsGoScene">
+							<h4 class="azul tpad" >CSGO Scene</h4>
+							<img src="imagens/CsgoScene.png" class="img-responsive center-block img-fluid img-thumbnail thumbs2">
+							<div class="smalltapd">
+								<button type="button" class="accordion ">Show Description </button>
+								<div class="panel">
+									<p class="tpad"> 
+										Site designed to let you know everything about the CSGO Scene.
+									</p>
+								</div>
+								<!--
+								<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#work3">Show Description &raquo;</button>
+								<div id="work3" class="collapse">
+									Site designed to let you know everything about the CSGO Scene.
+								</div>
+								-->
+							</div>
+						</section>
+						<br>
+						<br>
+						<section id="CentroSaudeEST">
+							<h4 class="azul tpad">Centro de Saude EST</h4>
+							<img src="imagens/CentroSaudeEst.png" class="img-responsive center-block img-fluid img-thumbnail thumbs2">
+							<div class="smalltapd">
+								<button type="button" class="accordion ">Show Description </button>
+								<div class="panel">
+									<p class="tpad"> 
+										Sistem for a health center.
+									</p>
+								</div>
+								<!--
+								<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#work4">Show Description &raquo;</button>
+								<div id="work4" class="collapse">
+									Sistem for a health center.
+								</div>
+								-->
+							</div>
+						</section>
+						<br>
+						<br>
+						<section id="StandLA">
+							<h4 class="azul tpad">Stand LA</h4>
+							<img src="imagens/StandLA.png" class="img-responsive center-block img-fluid img-thumbnail thumbs2">
+							<div class="smalltapd">
+								<button type="button" class="accordion ">Show Description </button>
+								<div class="panel">
+									<p class="tpad"> 
+										Site designed to be an online stand where the users can announce and buy vehicles from each other,based on StandVirtual.
+									</p>
+								</div>
+								<!--
+								<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#work5">Show Description &raquo;</button>
+								<div id="work5" class="collapse">
+									Site designed to be an online stand where the users can announce and buy vehicles from each other,based on StandVirtual. 
+								</div>
+								-->
+							</div>
+						</section>
+						<br>
+						<br>
+						<section id="AgendaEST">
+							<h4 class="azul tpad">Agenda EST</h4>
+							<img src="imagens/Android.jpg" class="img-responsive center-block img-fluid img-thumbnail thumbs2">
+							<div class="smalltapd">
+								<button type="button" class="accordion ">Show Description </button>
+								<div class="panel">
+									<p class="tpad"> 
+										Application designed with the aim of being a kind of contact list, where you can add contacts, edit them, delete them or search for some contact in particular by entering the name or number of the same.								
+									</p>
+								</div>
+								<!--
+								<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#work5">Show Description &raquo;</button>
+								<div id="work5" class="collapse">
+									Application designed with the aim of being a kind of contact list, where you can add contacts, edit them, delete them or search for some contact in particular by entering the name or number of the same.								
+								</div>
+							-->
+							</div>
+						</section>
+						<section id="AlienInvasion">
+							<br>
+							<br>
+								<h4 class="azul tpad">Alien Invasion</h4>
+								<img src="imagens/AlienInvasion.png" class="img-responsive center-block img-fluid img-thumbnail thumbs2">
+								<div class="smalltapd">
+									<button type="button" class="accordion ">Show Description  </button>
+									<div class="panel">
+										<p class="tpad"> 
+											Custom version of "Alien Invasion", a very popular game where the player have to fight against the aliens that are trying to take control of Earth.<br>
+											This version has some similarities to the original version but with its own characteristics, while maintaining the original goal of moving a ship in order not to allow enemies to enter planet Earth and destroy humanity.
+ 										</p>
+									</div>
+									<!--
+									<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#work5">Mostrar Descrição &raquo;</button>
+									<div id="work5" class="collapse">
+										Vídeo desenvolvido com o objetivo de aprender a como editar vídeo e áudio, assim como a adicionar alguns efeitos aos mesmos, utilizando o after effects.	
+									</div>
+									-->
+							</section>
+							<section id="DesigualdadeGenero">
+								<br>
+								<br>
+									<h4 class="azul tpad">Desigualdade de Género</h4>
+		
+									<div id="divImagem"  class="containerImagem" onclick="changeToPlayer()">
+										<img src="imagens/ThumbVideo.png" class="img-responsive center-block img-fluid img-thumbnail imagemVideo thumbs2">
+										<div class="middleImagem">
+											<div>Click twice to play</div>
+										  </div>
+									</div>	
+
+									<div id="divVideo" class="tpad" style="max-width: 1280px"><div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"><iframe src="https://ipcbcampus-my.sharepoint.com/personal/l_abrantes_ipcbcampus_pt/_layouts/15/embed.aspx?UniqueId=f52875c8-b1bb-4e52-b68e-0ea0a37c5505&embed=%7B%22hvm%22%3Atrue%2C%22ust%22%3Atrue%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="1280" height="720" frameborder="0" scrolling="no" allowfullscreen title="DesigualdadeGenero.mp4" style="border:none; position: absolute; top: 0; left: 0; right: 0; bottom: 0; height: 100%; max-width: 100%;"></iframe></div></div>
+
+									<div class="smalltapd">
+										<button type="button" class="accordion ">Show Description  </button>
+										<div class="panel">
+											<p class="tpad"> 
+												Video developed with the aim of sensitizing people to the big problem that is gender inequality, very present in today's society.
+											</p>
+										</div>
+										<!--
+										<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#work5">Mostrar Descrição &raquo;</button>
+										<div id="work5" class="collapse">
+											Vídeo desenvolvido com o objetivo de aprender a como editar vídeo e áudio, assim como a adicionar alguns efeitos aos mesmos, utilizando o after effects.	
+										</div>
+										-->
+							</section>
+							<section id="RunAndEat">
+								<br>
+								<br>
+									<h4 class="azul tpad">Run And Eat</h4>
+		
+									<div id="divImagem2"  class="containerImagem" onclick="changeToPlayer2()">
+										<img src="imagens/RunAndEatThumb.jpg" class="img-responsive center-block img-fluid img-thumbnail imagemVideo thumbs2">
+										<div class="middleImagem">
+											<div>Click twice to play</div>
+										  </div>
+									</div>	
+									
+									<div id="divVideo2" class="tpad"  style="max-width: 1280px"><div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"><iframe src="https://ipcbcampus-my.sharepoint.com/personal/l_abrantes_ipcbcampus_pt/_layouts/15/embed.aspx?UniqueId=88bc7a47-6af7-434c-91f3-da327eb74ceb&embed=%7B%22hvm%22%3Atrue%2C%22ust%22%3Atrue%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="1280" height="720" frameborder="0" scrolling="no" allowfullscreen title="RunAndEat.mp4" style="border:none; position: absolute; top: 0; left: 0; right: 0; bottom: 0; height: 100%; max-width: 100%;"></iframe></div></div>
+									
+									<div class="smalltapd">
+										<button type="button" class="accordion ">Show Description </button>
+										<div class="panel">
+											<p class="tpad"> 
+												The development of this game was motivated by the study of the healthy lifestyle and the impact that gamification can have on it.<br>
+												Uniting the two themes was developed the project "Run and Eat", a game developed in 2D through the Unity tool, with the aim of sensitizing people to the problems caused by a sedentary lifestyle, applying the incentives that gamification offers.	
+											</p>
+										</div>
+										<!--
+										<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#work5">Mostrar Descrição &raquo;</button>
+										<div id="work5" class="collapse">
+											Vídeo desenvolvido com o objetivo de aprender a como editar vídeo e áudio, assim como a adicionar alguns efeitos aos mesmos, utilizando o after effects.	
+										</div>
+										-->
+							</section>
+							<section id="ClientesEST">
+								<br>
+								<br>
+									<h4 class="azul tpad">Bar ESTCB</h4>
+									<img src="imagens/BarESTCB.png" class="img-responsive center-block img-fluid img-thumbnail thumbs2">
+									<div class="smalltapd">
+										<button type="button" class="accordion ">Show Description  </button>
+										<div class="panel">
+											<p class="tpad"> 
+												Application built in order to manage the contacts of customers of the Bar ESTCB, where you can add contacts, edit them, delete them or search for some specific contact by entering the name or number of the same.	
+											</p>
+										</div>
+										<!--
+										<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#work5">Mostrar Descrição &raquo;</button>
+										<div id="work5" class="collapse">
+											Aplicação desenhada com o objetivo de ser uma espécie de lista de contactos, onde se pode adicionar contactos, editá-los, apagá-los ou procurar algum contacto em especifico introduzindo o nome ou o número do mesmo.	 
+										</div>
+										-->
+									</div>
+								</section>	
+							<br>
+							<br>
+							<section>
+						<ul class="pagination">
+							<li class="page-item"><a class="page-link" href="#">Previous</a></li>
+							<li class="page-item"><a class="page-link" href="#">1</a></li>
+							<li class="page-item"><a class="page-link" href="#">2</a></li>
+							<li class="page-item"><a class="page-link" href="#">3</a></li>
+							<li class="page-item"><a class="page-link" href="#">Next</a></li>
+						</ul>
+						</section>
+						<br>
+						<br>
+					</div>
+				</div>
+			</div>	
+		<!--End Page Content-->
+		  
+		<!-- Modal de saida -->
+		<div class="modal fade" id="exitModal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					
+				<!-- Modal Header -->
+				<div class="modal-header horizontalCentering" >
+					<h5 >Thank you for the visit !</h5>
+				</div>
+				
+				<!-- Modal footer -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger horizontalCentering" data-dismiss="modal" onclick="cancelExit()">Cancel exit</button>
+				</div>
+					
+				</div>
+			</div>
+		</div>
+
+		<div class="jumbotron text-center col-lg-12"  style="margin-bottom:0">
+			<div class="row">
+				<div class="col-sm-6">
+					<p>© 2022 Leonardo Abrantes </p>
+					<p>All Rights Reserved.</p>
+				</div>
+				<div class="col-sm-6">
+					<a href="http://www.facebook.com">
+						<img alt="Facebook Icon" class="img-responsive zoom" src="imagens/facebook_icon.png" width="70px" height="70px">
+					</a>
+					<a href="https://www.linkedin.com/in/l3onardoabrant3s">
+						<img alt="LinkedIn Icon" class="img-responsive zoom" src="imagens/linkedin_icon.png"width="70px" height="70px">
+					</a>
+					<a href="http://www.twitter.com">
+						<img alt="Twitter Icon" class="img-responsive zoom" src="imagens/twitter_icon.png" width="70px" height="70px">
+					</a>
+				</div>
+			</div>
+		  </div>
+  		<script>
+			jQuery(document).ready(function() {	
+				
+				var btnScrollToTop = document.querySelector("#btnScrollToTop");
+
+				btnScrollToTop.style.display = "none"; //Botao inicialmente escondido 
+
+				document.querySelector('body').onscroll = function(){
+
+					if (window.scrollY > 200){	//Se dao scroll mais de 200px do topo da pagina
+						btnScrollToTop.style.display = "block";	//mostra o botao
+					}else{
+						btnScrollToTop.style.display = "none";	//esconde o botao
+					}
+				}
+
+				btnScrollToTop.addEventListener("click" , function () {	//Ao clicar no botao vai pro topo
+				$("html , body").animate({scrollTop:0},"slow");
+				});
+			});
+
+
+			//Accordion
+			var acc = document.getElementsByClassName("accordion");
+			var i;
+
+			for (i = 0; i < acc.length; i++) {
+				acc[i].addEventListener("click", function() {
+				this.classList.toggle("accordionActive");
+				var panel = this.nextElementSibling;
+					if (panel.style.maxHeight) {
+						panel.style.maxHeight = null;
+					} else {
+						panel.style.maxHeight = panel.scrollHeight + "px";
+					} 
+				});
+			}
+
+			//Change image to video
+			function changeToPlayer() {
+				var variavel1 = document.getElementById("divImagem");
+				var variavel2 = document.getElementById("divVideo");
+						
+				variavel1.style.display = "none";
+				variavel2.style.display = "block";		
+			}		
+
+			//Change image to video
+			function changeToPlayer2() {					
+				var variavel3 = document.getElementById("divImagem2");
+				var variavel4 = document.getElementById("divVideo2");
+				
+					variavel3.style.display = "none";
+					variavel4.style.display = "block";
+				
+			}
+		</script>
+  </body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio</title>
+  <link rel="icon" href="imagens/Portfolio.png" >
+
+ 	<!-- Bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/Portfolio.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="js/Portfolio.js"></script>
+
+</head>
+	<body>
+
+		<nav class="navbar fixed-top navbar-expand-sm bg-dark navbar-dark">
+			<a class="navbar-brand" href="index_ING.html">Portfolio</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+					  <a class="nav-link" href="index_ING.html">Intro</a>
+					</li>
+					<li class="nav-item ">
+					  <a class="nav-link" href="Who_ING.html">Who</a>
+					</li>
+					 <li class="nav-item">
+					  <a class="nav-link" href="What_ING.html">What</a>
+					</li> 
+					<li class="nav-item">
+						<a class="nav-link" href="Work_ING.html">Works</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="Contact_ING.html">Contact</a>
+					</li>   					
+				</ul>	
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<audio id="audio">
+							<source src="Media/Not For NothingOtis McDonald (No Copyright Music).mp3" type="audio/mpeg">
+						</audio>
+						<a id="audioOff" class="nav-item" onclick="playAudio()"><i class="material-icons verticalCenter">volume_off</i></a> 
+						<a id="audioOn" class="nav-item" onclick="playAudio()"><i class="material-icons verticalCenter">volume_up</i></a> 
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="Contact_PT.html">PT</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-item sair" onclick="exitModal()" ><i class="material-icons verticalCenter">logout</i></a> 						
+					</li>
+				</ul>
+			</div>  
+		  </nav>
+
+		<!--End Navigation-->
+
+		 
+		<button id="btnScrollToTop">
+			<i class="material-icons md-36">keyboard_arrow_up</i>
+		</button>
+		
+		<div class="map" style="height: 92vh;">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2621.5340482798974!2d-7.514568!3d39.8195151!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd3d5ea6bb2280e1%3A0x1c460157bc4b46c8!2sEscola%20Superior%20de%20Tecnologia%20-%20Instituto%20Polit%C3%A9cnico%20de%20Castelo%20Branco!5e1!3m2!1spt-PT!2spt!4v1606774858370!5m2!1spt-PT!2spt" width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+			<br>
+		</div>
+		
+			
+			<div class="container padded">
+				<div class="row">
+					<div class="col-sm-8">
+						<h2>Get in Touch</h2>
+						<hr>
+						<form name="formContact" > 
+							<div class="form-group">
+								<label for="email" class="control-label">Email:</label>
+								<input type="email" name='email' class=" form-control" id="email" placeholder="Email" required>
+							</div>
+							<div class="form-group">
+								<label for="message" class="control-label">Message:</label>
+								<textarea id="message" class="form-control" rows="4" name="message" placeholder="Message..." required></textarea>
+							</div>
+							<button type="reset" class="btn btn-primary" onclick="ValidateEmail(document.formContact.email,document.formContact.message)" >
+								Send
+							</button>
+							
+						</form>
+					</div>
+					
+					<!-- Contact Modal -->
+					<div class="modal fade" id="ContactModal">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								
+							<!-- Modal Header -->
+							<div class="modal-header">
+								<h5>Message sent successfully !</h5>
+								<button type="button" class="close" data-dismiss="modal">✖</button>
+							</div>
+							
+							<!-- Modal footer -->
+							<div class="modal-footer">
+								<button type="button" class="btn btn-danger horizontalCentering" data-dismiss="modal">Close</button>
+							</div>
+								
+							</div>
+						</div>
+					</div>
+					
+
+					<!-- Modal de saida -->
+					<div class="modal fade" id="exitModal">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								
+							<!-- Modal Header -->
+							<div class="modal-header horizontalCentering" >
+								<h5 >Thank you for the visit !</h5>
+							</div>
+							
+							<!-- Modal footer -->
+							<div class="modal-footer">
+								<button type="button" class="btn btn-danger horizontalCentering" data-dismiss="modal" onclick="cancelExit()">Cancel exit</button>
+							</div>
+								
+							</div>
+						</div>
+					</div>
+					
+				<div class="col-sm-3 offset-sm-1">
+					<img class="img-circle img-responsive" src="imagens/Est_logo.png">
+					<hr>
+					<address>
+						<h3>Portfolio</h3>
+						<a href="mailto:first.last@portfolio.com">l.abrantes@ipcbcampus.pt</a><br>
+					</address>
+				</div>
+				</div>
+			</div>
+	
+		  
+			<div class="jumbotron text-center col-lg-12"  style="margin-bottom:0">
+				<div class="row">
+					<div class="col-sm-6">
+						<p>© 2022 Leonardo Abrantes </p>
+						<p>All Rights Reserved.</p>
+					</div>
+					<div class="col-sm-6">
+						<a href="http://www.facebook.com">
+							<img alt="Facebook Icon" class="img-responsive zoom" src="imagens/facebook_icon.png" width="70px" height="70px">
+						</a>
+						<a href="https://www.linkedin.com/in/l3onardoabrant3s">
+							<img alt="LinkedIn Icon" class="img-responsive zoom" src="imagens/linkedin_icon.png"width="70px" height="70px">
+						</a>
+						<a href="http://www.twitter.com">
+							<img alt="Twitter Icon" class="img-responsive zoom" src="imagens/twitter_icon.png" width="70px" height="70px">
+						</a>
+					</div>
+				</div>
+			  </div>
+			<script>
+			jQuery(document).ready(function() {	
+				
+				var btnScrollToTop = document.querySelector("#btnScrollToTop");
+
+				btnScrollToTop.style.display = "none"; //Botao inicialmente escondido 
+
+				document.querySelector('body').onscroll = function(){
+
+					if (window.scrollY > 200){	//Se dao scroll mais de 200px do topo da pagina
+						btnScrollToTop.style.display = "block";	//mostra o botao
+					}else{
+						btnScrollToTop.style.display = "none";	//esconde o botao
+					}
+				}
+
+				btnScrollToTop.addEventListener("click" , function () {	//Ao clicar no botao vai pro topo
+				$("html , body").animate({scrollTop:0},"slow");
+				});
+			});
+		</script>
+  </body>
+</html>

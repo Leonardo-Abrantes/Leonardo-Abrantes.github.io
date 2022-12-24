@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio</title>
+  <link rel="icon" href="imagens/Portfolio.png" >
+
+ 	<!-- Bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/Portfolio.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="js/Portfolio.js"></script>
+
+</head>
+	<body>
+
+		<nav class="navbar fixed-top navbar-expand-sm bg-dark navbar-dark">
+			<a class="navbar-brand" href="index_ING.html">Portfolio</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+					  <a class="nav-link" href="index_ING.html">Intro</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="Who_ING.html">Who</a>
+					</li>
+					 <li class="nav-item active">
+					  <a class="nav-link" href="What_ING.html">What</a>
+					</li> 
+					<li class="nav-item">
+						<a class="nav-link" href="Work_ING.html">Works</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="Contact_ING.html">Contact</a>
+					</li>   					
+				</ul>
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<audio id="audio">
+							<source src="Media/Not For NothingOtis McDonald (No Copyright Music).mp3" type="audio/mpeg">
+						</audio>
+						<a id="audioOff" class="nav-item" onclick="playAudio()"><i class="material-icons verticalCenter">volume_off</i></a> 
+						<a id="audioOn" class="nav-item" onclick="playAudio()"><i class="material-icons verticalCenter">volume_up</i></a> 
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="What_PT.html">PT</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-item sair" onclick="exitModal()" ><i class="material-icons verticalCenter">logout</i></a> 						
+					</li>
+				</ul>
+			</div>  
+		  </nav>
+		<!--End Navigation-->
+
+		 
+		<button id="btnScrollToTop">
+			<i class="material-icons md-36">keyboard_arrow_up</i>
+		</button>
+		
+		<div class="container padded">	
+			<div class="row">
+				<div class="col-sm-12 blog">
+					<h2>What i do </h2>
+					<hr>
+					<section>
+						<h4 class="azul tpad">Web development</h4>
+						<img src="imagens/WebDevelopment.jpg" class="img-responsive center-block img-fluid img-thumbnail thumbs">
+						<div class="smalltapd">
+							<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#description1">Show Description &raquo;</button>
+							<div id="description1" class="collapse gradiente">
+								Web development is the term used to describe the development of websites, on the Internet or on an intranet. <br>
+								The professional who works developing websites can be a web designer (layout developer) or a web developer (systems developer). <br>
+								The development refers to a process of construction and testing of the specific software for the web, with the purpose of obtaining a set of programs, which satisfy the intended functions, either in terms of user usability or compatibility with other existing programs.<br> 
+								Web development can range from simple static pages to rich applications, e-commerce or social networks.
+							</div>
+						</div>
+					</section>
+					<br>
+					<br>
+					<section>
+						<h4 class="azul tpad">Mobile Development</h4>
+						<img src="imagens/AppDevelopment.jpg" class="img-responsive center-block img-fluid img-thumbnail thumbs">
+						<div class="smalltapd">
+							<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#description2">Show Description &raquo;</button>
+							<div id="description2" class="collapse gradiente">
+								Development of applications and systems for mobile devices, or mobile development is all activity and processes about the development of software for mobile devices (handheld) as pocket computers, 
+								Pdas, smartphone, mobile phone, portable console and Ultra Mobile PC combined with technologies such as GPS, portable TV, touch, consoles, Internet browser, WAP, audio players, video and text, among others.
+							</div>
+						</div>
+					</section>
+					<br>
+					<br>
+					<section>
+						<h4 class="azul tpad">Image Editing</h4>
+						<img src="imagens/ImageEditing.jpg" class="img-responsive center-block img-fluid img-thumbnail thumbs">
+						<div class="smalltapd">
+							<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#description3">Show Description &raquo;</button>
+							<div id="description3" class="collapse gradiente">
+								Image editing encompasses the processes of altering images, whether they are digital photographs, traditional photo-chemical photographs, or illustrations. <br>
+								Traditional analog image editing is known as photo retouching, using tools such as an airbrush to modify photographs or editing illustrations with any traditional art medium. <br>
+								Graphic software programs, which can be broadly grouped into vector graphics editors, raster graphics editors, and 3D modelers, are the primary tools with which a user may manipulate, enhance, and transform images. <br>
+								Many image editing programs are also used to render or create computer art from scratch.	
+							</div>
+						</div>
+					</section>
+					<br>
+					<br>
+					<section>
+						<h4 class="azul tpad">Video Editing</h4>
+						<img src="imagens/VideoEditing.jpg" class="img-responsive center-block img-fluid img-thumbnail thumbs" >
+						<div class="smalltapd">
+							<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#description4">Show Description &raquo;</button>
+							<div id="description4" class="collapse gradiente">
+								Video editing is the manipulation and arrangement of video shots. <br>
+								Video editing is used to structure and present all video information, including films and television shows, video advertisements and video essays. <br>
+								Video editing has been dramatically democratized in recent years by editing software available for personal computers. Editing video can be difficult and tedious, so several technologies have been produced to aid people in this task.<br>
+								Pen based video editing software was developed in order to give people a more intuitive and fast way to edit video
+							</div>
+						</div>
+					</section>
+					<br>
+					<br>
+					<section>
+						<h4 class="azul tpad">3D Animation</h4>
+						<img src="imagens/3DAnimation.jpg" class="img-responsive center-block img-fluid img-thumbnail thumbs" >
+						<div class="smalltapd">
+							<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#description5">Show Description &raquo;</button>
+							<div id="description5" class="collapse gradiente">
+								3D animation refers to the process of taking digital objects and making them come to life by creating the illusion that they’re moving through a three-dimensional space. <br>
+								These computer-generated objects appear on a two-dimensional screen, but they’re crafted to mimic the principles of a 3D world. <br>
+								They appear to move, turn, and rotate like a real-world object, allowing for a 360-degree view of all sides.<br>
+							</div>
+						</div>
+					</section>
+					<br>
+					<br>
+					<section>
+						<h4 class="azul tpad">Desenvolvimento de jogos</h4>
+						<img src="imagens/GameDevelopment.jpg" class="img-responsive center-block img-fluid img-thumbnail thumbs" >
+						<div class="smalltapd">
+							<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#description6">Show Description &raquo;</button>
+							<div id="description6" class="collapse gradiente"   background-image: linear-gradient(to right, rgba(240,255,2551),rgba(0,0,0,0));>
+								Game Development is the art of creating games and describes the design, development and release of a game. <br>
+								It may involve concept generation, design, build, test and release. <br>
+								While you create a game, it is important to think about the game mechanics, rewards, player engagement and level design.</div>
+						</div>
+					</section>
+					<br>
+				</div>
+			</div>
+		</div>	
+		<!--End Page Content-->
+
+		<!-- Modal de saida -->
+		<div class="modal fade" id="exitModal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					
+				<!-- Modal Header -->
+				<div class="modal-header horizontalCentering" >
+					<h5 >Thank you for the visit !</h5>
+				</div>
+				
+				<!-- Modal footer -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger horizontalCentering" data-dismiss="modal" onclick="cancelExit()">Cancel exit</button>
+				</div>
+					
+				</div>
+			</div>
+		</div>
+		  
+		<div class="jumbotron text-center col-lg-12"  style="margin-bottom:0">
+			<div class="row">
+				<div class="col-sm-6">
+					<p>© 2022 Leonardo Abrantes </p>
+					<p>All Rights Reserved.</p>
+				</div>
+				<div class="col-sm-6">
+					<a href="http://www.facebook.com">
+						<img alt="Facebook Icon" class="img-responsive zoom" src="imagens/facebook_icon.png" width="70px" height="70px">
+					</a>
+					<a href="https://www.linkedin.com/in/l3onardoabrant3s">
+						<img alt="LinkedIn Icon" class="img-responsive zoom" src="imagens/linkedin_icon.png"width="70px" height="70px">
+					</a>
+					<a href="http://www.twitter.com">
+						<img alt="Twitter Icon" class="img-responsive zoom" src="imagens/twitter_icon.png" width="70px" height="70px">
+					</a>
+				</div>
+			</div>
+		  </div>
+  		<script>
+			jQuery(document).ready(function() {	
+				
+				var btnScrollToTop = document.querySelector("#btnScrollToTop");
+
+				btnScrollToTop.style.display = "none"; //Botao inicialmente escondido 
+
+				document.querySelector('body').onscroll = function(){
+
+					if (window.scrollY > 200){	//Se dao scroll mais de 200px do topo da pagina
+						btnScrollToTop.style.display = "block";	//mostra o botao
+					}else{
+						btnScrollToTop.style.display = "none";	//esconde o botao
+					}
+				}
+
+				btnScrollToTop.addEventListener("click" , function () {	//Ao clicar no botao vai pro topo
+				$("html , body").animate({scrollTop:0},"slow");
+				});
+			});
+		</script>
+  </body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portefólio</title>
+  <link rel="icon" href="imagens/Portfolio.png" >
+
+ 	<!-- Bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/Portfolio.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="js/Portfolio.js"></script>
+
+</head>
+	<body>
+
+		<nav class="navbar fixed-top navbar-expand-sm bg-dark navbar-dark">
+			<a class="navbar-brand" href="index.html">Portefólio</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav">
+					<li class="nav-item" >
+						<a class="nav-link" href="index.html">Introdução</a>
+					  </li>
+					  <li class="nav-item active">
+						<a class="nav-link" href="Who_PT.html">Quem</a>
+					  </li>
+					   <li class="nav-item">
+						<a class="nav-link" href="What_PT.html">O Quê</a>
+					  </li> 
+					  <li class="nav-item">
+						  <a class="nav-link" href="Work_PT.html">Trabalhos</a>
+					  </li>
+					  <li class="nav-item">
+						  <a class="nav-link" href="Contact_PT.html">Contacto</a>
+					  </li>    					
+				</ul>
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<audio id="audio">
+							<source src="Media/Not For NothingOtis McDonald (No Copyright Music).mp3" type="audio/mpeg">
+						</audio>
+						<a id="audioOff" class="nav-item" onclick="playAudio()"><i class="material-icons verticalCenter">volume_off</i></a> 
+						<a id="audioOn" class="nav-item" onclick="playAudio()"><i class="material-icons verticalCenter">volume_up</i></a> 
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="Who_ING.html">ENG</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-item sair" onclick="exitModal()" ><i class="material-icons verticalCenter">logout</i></a> 						
+					</li>
+				</ul>
+			</div>  
+		  </nav>
+		<!--End Navigation-->
+
+		<button id="btnScrollToTop">
+			<i class="material-icons md-36">keyboard_arrow_up</i>
+		</button>
+		
+		  <div class="container">
+			<div class="row" >
+			
+			  <div class="col-sm-4">	<br>	<br>	<br>
+				<h2>Sobre mim</h2>
+				<img src="imagens/User1.png"  class="img-responsive" alt="Leonardo Abrantes" width="300px" height="300px"><br>
+				<br>
+				<table>
+					<tr>
+					  <td class="description">	
+							<div class="col-xs-6">
+								<h5>Nome:</h5>
+							</div>
+					  </td>
+					  <td class="description">
+						 	<div class="col-xs-6">
+								<h6>Leonardo Abrantes</h6>
+							</div>
+					  </td>
+					</tr>
+					<tr>
+						<td class="description">	
+							  <div class="col-xs-6">
+								  <h5>Data de Nascimento:</h5>
+							  </div>
+						</td>
+						<td class="description">
+							  <div class="col-xs-6">
+								  <h6>25 de Julho, 2000</h6>
+							  </div>
+						</td>
+					  </tr>
+					  <tr>
+						<td class="description">	
+							  <div class="col-xs-6">
+								  <h5>Nacionalidade:</h5>
+							  </div>
+						</td>
+						<td class="description"> 
+							  <div class="col-xs-6">
+								  <h6>Portuguesa</h6>
+							  </div>
+						</td>
+					  </tr>
+					  <tr>
+						<td class="description"> 	
+							  <div class="col-xs-6">
+								  <h5>Língua Materna:</h5>
+							  </div>
+						</td>
+						<td class="description">
+							  <div class="col-xs-6">
+								  <h6>Português</h6>
+							  </div>
+						</td>
+					  </tr>
+				  </table>
+				  <br>
+					<div style="text-align: center;margin-left: -15%;"> 	
+						<h5><a class="btnDownload" href="https://drive.google.com/file/d/1SYlU8BohzwaaAcRD4qxcT7CMirP3iYlD/view?usp=sharing" download="Cv_EuroPass_LeonardoAbrantes.pdf" target="_blank" style="text-decoration:none" ><i class="material-icons" style="vertical-align: middle;">get_app</i> Download CV  </a></h5>
+					</div>
+			  </div>
+		
+			  <div class="col-sm-8"> <br>	<br>	<br>
+				<h2>&nbsp;</h2>
+				<h3>Educação</h3>
+				<p><a href="http://www.esfundao.pt/"> Agrupamento de Escolas do Fundão</a>, Portugal 12/09/2015 – 17/07/2018</p>
+				<a href="https://drive.google.com/file/d/1K7k52-AiEanYr1uIhXGGmpNJ0BImMV_8/view?usp=sharing"> 
+					<img src="imagens/EscolaFundao.jpg"  class="img-responsive img-thumbnail SombraAzul" alt="Leonardo Abrantes" width="auto" height="300px"><br>
+				</a>
+				<p>Técnico de Gestão e Programação de Sistemas Informáticos✔️ </p>
+				<hr>
+
+				<p><a href="https://www.ipcb.pt/estcb/escola-superior-de-tecnologia"> IPCB - Instituto Politécnico de Castelo Branco</a>, Portugal 14/09/2018 – 31/07/2020</p>
+				<a href="https://drive.google.com/file/d/1sq_KLazaZ0U8UgaSn_DaSsDzwUtZcNjO/view?usp=sharing">
+					<img src="imagens/EST_IPCB.jpg"  class="img-responsive img-thumbnail SombraAzul" alt="Leonardo Abrantes" width="auto" height="300px"><br>
+				</a>
+				<p> Certificado CTESP - Tecnologias e Programação de Sistemas de Informação-PT ✔️</p>
+				<hr>
+
+				<p></p>
+				<p><a href="https://www.outsystems.com/">OutSystems</a>, Portugal 01/07/2020 – 29/07/2020 </p>
+				<a href="https://www.outsystems.com/profile/7xvvs9cir9/overview">
+					<img src="imagens/Certificacoes.png"  class="img-responsive img-thumbnail SombraAzul" alt="Leonardo Abrantes" width="auto" height="300px"><br>
+				</a>
+				<p>	Associate Traditional Web Developer (OutSystems 11)✔️ <br>
+					Associate Reactive Developer (OutSystems 11)✔️</p>
+				<br>
+				<br>
+
+
+				<h3>Experiência</h3>
+				<p><a href="https://pcm.pt/"> PcMedic</a>, Portugal 2015 – 2018</p>
+				<a href="https://pcm.pt/">
+					<img src="imagens/Pcm.png"  class="img-responsive SombraAzul" alt="Leonardo Abrantes" width="auto" height="200px"><br>
+				</a>
+				<p>	Estágio Curricular ✔️</p>
+				<hr>
+				<p><a href="http://www.embracerad.com/"> EmbraceRad</a>, Portugal 24/02/2000 – 15/06/2020</p>
+				<a href="http://www.embracerad.com/"> 
+					<img src="imagens/EmbraceRad.png"  class="img-responsive SombraAzul" alt="Leonardo Abrantes" width="auto" height="100px"><br>
+				</a>
+				<p>	Estágio Curricular ✔️</p>
+				<hr>
+				<br>	
+				<br>
+			  </div>
+			</div>
+		  </div>
+		  
+		  <!-- Modal de saida -->
+		<div class="modal fade" id="exitModal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					
+				<!-- Modal Header -->
+				<div class="modal-header horizontalCentering" >
+					<h5>Obrigado pela visita !</h5>
+				</div>
+				
+				<!-- Modal footer -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger horizontalCentering" data-dismiss="modal" onclick="cancelExit()">Cancelar saída</button>
+				</div>
+					
+				</div>
+			</div>
+		</div>
+
+
+		  <div class="jumbotron text-center col-lg-12"  style="margin-bottom:0">
+			<div class="row">
+				<div class="col-sm-6">
+					<p>© 2022 Leonardo Abrantes </p>
+					<p>Todos os direitos reservados.</p>
+				</div>
+				<div class="col-sm-6">
+					<a href="http://www.facebook.com">
+						<img alt="Facebook Icon" class="img-responsive zoom" src="imagens/facebook_icon.png" width="70px" height="70px">
+					</a>
+					<a href="https://www.linkedin.com/in/l3onardoabrant3s">
+						<img alt="LinkedIn Icon" class="img-responsive zoom" src="imagens/linkedin_icon.png"width="70px" height="70px">
+					</a>
+					<a href="http://www.twitter.com">
+						<img alt="Twitter Icon" class="img-responsive zoom" src="imagens/twitter_icon.png" width="70px" height="70px">
+					</a>
+				</div>
+			</div>
+		  </div>
+		  <script>
+			jQuery(document).ready(function() {	
+				
+				var btnScrollToTop = document.querySelector("#btnScrollToTop");
+
+				btnScrollToTop.style.display = "none"; //Botao inicialmente escondido 
+
+				document.querySelector('body').onscroll = function(){
+
+					if (window.scrollY > 200){	//Se dao scroll mais de 200px do topo da pagina
+						btnScrollToTop.style.display = "block";	//mostra o botao
+					}else{
+						btnScrollToTop.style.display = "none";	//esconde o botao
+					}
+				}
+
+				btnScrollToTop.addEventListener("click" , function () {	//Ao clicar no botao vai pro topo
+				$("html , body").animate({scrollTop:0},"slow");
+				});
+			});				
+			</script>
+ 	</body>
+</html>
