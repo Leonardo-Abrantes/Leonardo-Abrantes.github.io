@@ -57,10 +57,17 @@ hr {
 	margin-bottom:30px;
 }
 
+/**
 .map{
 	height:500px;
 	width:100%;
 }
+
+div.map{
+	margin-top: 60px;
+}
+**/
+
 
 @media(min-width:768px){
 	.carousel-inner>.item{
@@ -76,10 +83,6 @@ hr {
 
 td.description {
 	vertical-align: bottom;
-}
-
-div.map{
-	margin-top: 60px;
 }
 
 .modal-dialog {
