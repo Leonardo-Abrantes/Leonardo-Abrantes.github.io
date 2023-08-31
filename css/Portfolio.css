@@ -315,3 +315,7 @@ img.SombraAzul:hover{
 	width: 1200px;
 	object-fit: contain;
 }
+
+.reduceTpad{
+	margin-top:-10%;
+}
