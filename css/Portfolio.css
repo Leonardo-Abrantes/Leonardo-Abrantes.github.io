@@ -47,7 +47,7 @@ b,strong{
 }
 
 .padded{
-	padding:100px 100px 15px;
+	padding:100px 15px;
 }
 
 hr {
@@ -335,4 +335,5 @@ img.SombraAzul:hover{
 
 .container{
 	background-color:white  !important;
+	max-width: 80% !important;
 }
