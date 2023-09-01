@@ -66,6 +66,7 @@
 			<i class="material-icons md-36">keyboard_arrow_up</i>
 		</button>
 		
+		<div style="background-color:#eeefe9;"> 
 			<div class="container padded">
 				<div class="row">
 					<div class="col-sm-12">
@@ -74,7 +75,8 @@
 					<p>Feel free to get in touch with me. I welcome your feedback, questions, and suggestions.</p>
 					<p>If you have a specific question or comment, please use the contact form presented below to place it, where you should simply fill out the required fields and I'll get back to you as soon as possible. Alternatively, you can contact me through my work social media or email, presented next to the form. </p>
 					<p>I will make an effort to respond to all messages within 24 hours, however, there may be times when it takes longer to respond during busy periods.</p>
-					<p>Thank you for your interest in getting in touch with me. I look forward to hearing from you!</p>
+					<p>Thank you for your interest in getting in touch with me.</p>
+					<p>I look forward to hearing from you!</p>
 				</div>
 			</div>
 
@@ -105,7 +107,8 @@
 								
 							<!-- Modal Header -->
 							<div class="modal-header">
-								<h5>Message sent successfully !</h5>
+								<!--<h5>Message sent successfully !</h5>-->
+								<h5>An error occurred while sending the message</h5>
 								<button type="button" class="close" data-dismiss="modal">✖</button>
 							</div>
 							
@@ -198,25 +201,26 @@
 			</div>
 
 			<script>
-			jQuery(document).ready(function() {	
-				
-				var btnScrollToTop = document.querySelector("#btnScrollToTop");
+				jQuery(document).ready(function() {	
+					
+					var btnScrollToTop = document.querySelector("#btnScrollToTop");
 
-				btnScrollToTop.style.display = "none"; //Botao inicialmente escondido 
+					btnScrollToTop.style.display = "none"; //Botao inicialmente escondido 
 
-				document.querySelector('body').onscroll = function(){
+					document.querySelector('body').onscroll = function(){
 
-					if (window.scrollY > 200){	//Se dao scroll mais de 200px do topo da pagina
-						btnScrollToTop.style.display = "block";	//mostra o botao
-					}else{
-						btnScrollToTop.style.display = "none";	//esconde o botao
+						if (window.scrollY > 200){	//Se dao scroll mais de 200px do topo da pagina
+							btnScrollToTop.style.display = "block";	//mostra o botao
+						}else{
+							btnScrollToTop.style.display = "none";	//esconde o botao
+						}
 					}
-				}
 
-				btnScrollToTop.addEventListener("click" , function () {	//Ao clicar no botao vai pro topo
-				$("html , body").animate({scrollTop:0},"slow");
+					btnScrollToTop.addEventListener("click" , function () {	//Ao clicar no botao vai pro topo
+					$("html , body").animate({scrollTop:0},"slow");
+					});
 				});
-			});
-		</script>
+			</script>
+		</div>
   </body>
 </html>
