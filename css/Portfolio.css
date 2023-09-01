@@ -321,5 +321,9 @@ img.SombraAzul:hover{
 }
 
 .reduceLpad{
-	margin-left:-75px;
+	margin-left:-50px;
+}
+
+.reduceRpad{
+	margin-right:-50px;
 }
