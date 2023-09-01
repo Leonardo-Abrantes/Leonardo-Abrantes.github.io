@@ -332,3 +332,7 @@ img.SombraAzul:hover{
 	transition: all 0.2s ease 0s;
 	text-decoration: none;
 }
+
+.container{
+	background-color:#fafafa !important;
+}
