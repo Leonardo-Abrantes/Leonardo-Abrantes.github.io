@@ -317,6 +317,14 @@ img.SombraAzul:hover{
 	object-fit: contain;
 }
 
+.thumbs3 {
+	max-height: 550px;
+	width: 1200px;
+	object-fit: contain;
+	padding-bottom: 25px;
+}
+
+
 .reduceTpad{
 	margin-top:-100px;
 }
