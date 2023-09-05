@@ -367,11 +367,40 @@
 										-->
 									</div>
 							</section>	
+							
+							<section id="ESMP">
+								<br>
+								<br>
+									<h4 class="azul tpad">Escape the System:The Missing Parts</h4>
+		
+									<div id="divImagem3"  class="containerImagem" onclick="changeToPlayer3()">
+										<img src="imagens/Escape the System_The Missing Parts_Thumb.png" class="img-responsive center-block img-fluid img-thumbnail imagemVideo thumbs2">
+										<div class="middleImagem">
+											<div>Click twice to play</div>
+										  </div>
+									</div>	
+									
+									<div id="divVideo3" class="tpad"  style="max-width: 1280px"><div style="max-width: 1280px"><div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"><iframe src="https://ipcbcampus-my.sharepoint.com/personal/l_abrantes_ipcbcampus_pt/_layouts/15/embed.aspx?UniqueId=75580b41-2b77-4a7f-918b-4828611e6320&embed=%7B%22hvm%22%3Atrue%2C%22ust%22%3Atrue%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="1280" height="720" frameborder="0" scrolling="no" allowfullscreen title="Escape the System:The Missing Parts.mp4" style="border:none; position: absolute; top: 0; left: 0; right: 0; bottom: 0; height: 100%; max-width: 100%;"></iframe></div></div>
+	
+									<div class="smalltapd">
+										<button type="button" class="accordion ">Mostrar Descrição </button>
+										<div class="panel">
+											<p class="tpad"> 
+												In a world where traditional teaching is becoming less and less effective, this project aims to present an alternative approach, which takes into account the motivation and involvement of students in teaching.In this way, a serious 3D game called "Escape the System: The Missing Parts" was developed using the open-source Unity tool for the Windows operating system, which aims to teach how the various components that make up a computer work and to demonstrate the impact that the use of gamification and escape room games can have on this process.
+											</p>
+										</div>
+										<!--
+										<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#work5">Mostrar Descrição &raquo;</button>
+										<div id="work5" class="collapse">
+											Vídeo desenvolvido com o objetivo de aprender a como editar vídeo e áudio, assim como a adicionar alguns efeitos aos mesmos, utilizando o after effects.	
+										</div>
+										-->
+							</section>
 
 							<section id="SMRLG">
 								<br>
 								<br>
-									<h4 class="azul tpad">Sistema Móvel De Reconhecimento De Língua Gestual</h4>
+									<h4 class="azul tpad">Mobile Sign Language Recognition System</h4>
 									
 									<div id="carousel-ID" class="carousel carousel-dark slide" data-ride="carousel" data-interval="5000">
 										<div class="carousel-inner">
@@ -551,6 +580,16 @@
 					variavel4.style.display = "block";
 				
 			}
+
+				//Change image to video
+				function changeToPlayer3() {					
+					var variavel5 = document.getElementById("divImagem3");
+					var variavel6 = document.getElementById("divVideo3");
+					
+						variavel5.style.display = "none";
+						variavel6.style.display = "block";
+					
+				}
 		</script>
   </body>
 </html>
