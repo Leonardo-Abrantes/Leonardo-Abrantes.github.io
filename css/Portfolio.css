@@ -214,6 +214,13 @@ img.SombraAzul:hover{
 	cursor: pointer;
 }
 
+#divVideo3 {
+	display: none;
+}
+
+#divImagem3:hover{
+	cursor: pointer;
+}
 
 .containerImagem {
 	position: relative;
